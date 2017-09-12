@@ -12,19 +12,19 @@ menu:
 
 ---
 
-The processes dashboard of Cockpit is the entry point for process monitoring. It comes with a pre-installed plugin, which lets you see deployed process definitions. Additional [plugins]({{< relref "webapps/cockpit/extend/plugins.md" >}}) can be added to the processes dashboard.
+The processes dashboard of Cockpit is the entry point for process monitoring. It comes with two pre-installed plugins, one which lets you see deployed process definitions and one which lets you search for process instances. Additional [plugins]({{< relref "webapps/cockpit/extend/plugins.md" >}}) can be added to the processes dashboard.
 
 
 # Deployed Processes
 
 {{< img src="../../img/cockpit-process-definition-state.png" title="Deployed Processes" >}}
 
-With this plugin you can easily observe the state of a process definition. Green and red dots signalize running and [failed jobs][failed-jobs]. At this observing level a red dot signifies that there is at least one process instance or a sub process instance which has an unresolved incident. You can localize the problem by using the [process definition view][process-definition-view].
+With this plugin you can easily observe the state of a process definition. Green ticks and red crosses signalize running and [failed jobs][failed-jobs]. At this observation level a red cross signifies that there is at least one process or sub process instance or which has an unresolved incident. You can localize the problem by using the [process definition view][process-definition-view].
 
 
 {{< img src="../../img/cockpit-deployed-processes.png" title="Rendered Process Preview" >}}
 
-You can also switch to the preview tab which displays the rendered process model of each deployed process. Additionally, you get information about how many instances of the process are currently running and about the process state. Green and red dots signalize running and [failed jobs][failed-jobs]. Click on the model to go to the [process definition view][process-definition-view].
+You can also switch to the preview tab which displays the rendered process models of all deployed processes. Additionally, you get information about how many instances of the processes are currently running and the process state. Green ticks and red crossess signalize running and [failed jobs][failed-jobs]. Click on the model to go to the [process definition view][process-definition-view].
 
 
 [process-definition-view]: {{< relref "webapps/cockpit/bpmn/process-definition-view.md" >}}
@@ -43,7 +43,7 @@ At the top of the dashboard, you can search for process instances and incidents 
 
 To add additional columns to the details of the search results, click on the 'Add column' button and select the desired details in the drop down menu that appears.
 
-Furthermore, you can copy a link to the current search query to your clipboard by clicking on the <button class="btn btn-xs"><i class="glyphicon glyphicon-link"></i></button> button and you can save search queries to your local browser storage by clicking on the <button class="btn btn-xs"><i class="glyphicon glyphicon-floppy-disk"></i></button> button and inserting a name in the drop down menu that appears. You can then retrieve the search query by clicking on the <button class="btn btn-xs"><i class="glyphicon glyphicon-floppy-disk"></i></button> button and selecting the chosen name in the drop down menu.
+Furthermore, you can copy a link to the current search query to your clipboard by clicking on the <button class="btn btn-xs btn-default"><span class="glyphicon glyphicon-link"></span></button> button and you can save search queries to your local browser storage by clicking on the <button class="btn btn-xs btn-default"><span class="glyphicon glyphicon-floppy-disk"></span><span class="caret"></span></button> button and inserting a name in the drop down menu that appears. You can then retrieve the search query by clicking on the <button class="btn btn-xs btn-default"><span class="glyphicon glyphicon-floppy-disk"></span><span class="caret"></span></button> button and selecting the chosen name in the drop down menu.
 
 You can always either search for process instances or for incidents. When you add a parameter for an incident search, you can not add a second parameter which would search for a process instance and vice versa.
 

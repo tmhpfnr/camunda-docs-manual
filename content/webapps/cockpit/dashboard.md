@@ -18,7 +18,7 @@ The dashboard of Cockpit provides a quick overview of running and historic opera
 At the top of the dashboard you can see a plugin with pie charts that display the amount of running process instances, open incidents and open human tasks. 
 By clicking on the number or a section of the pie chart, you are forwarded to the respective search with preselected query parameters.
 
-On the right hand side, you see an overview of deployed process definitions, decision definitions, case definitions and the total number of deployments.
+On the right hand side, you see a plugin with an overview of deployed process definitions, decision definitions, case definitions and the total number of deployments.
 
 Additional [plugins]({{< relref "webapps/cockpit/extend/plugins.md" >}}) can be added to the dashboard.
 
