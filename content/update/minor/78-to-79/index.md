@@ -74,9 +74,9 @@ This feature can be configured in two ways:
 These attributes can be modifed in the [configuration file]({{< relref "webapps/cockpit/extend/configuration.md#historic-activity-instance-metrics" >}})
 
 
-# Throttle login attempts
+# Throttle Login Attempts
 
-We introduce a special mechanism for consecutive unsuccessful login attempts.
+Throttle login attempts is a special mechanism for consecutive unsuccessful login attempts.
 A user will be delayed in trying to login after an unsuccessful login attempt for a certain amount of time (in seconds). This delay is calculated through a formula, and the contributing values are configurable. Please read more in the [Identity service]({{< relref "user-guide/process-engine/identity-service.md#throttle-login-attempts" >}}) section.
 
 The default values are:
