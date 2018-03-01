@@ -65,18 +65,18 @@ In addition, other *service-task-like* elements such as send tasks, business rul
 
 See the [REST API documentation]({{< relref "reference/rest/external-task/index.md" >}}) for how the API operations can be accessed via HTTP.
 
-### Long Polling to Fetch and Lock External Tasks
+### Long Polling to 'Fetch and Lock' External Tasks
 
 {{< img src="../img/external-task-long-polling.png" alt="Long polling to fetch and lock external tasks" >}}
 
 In general, requests which are sent to a server by a client are answered immediately, irrespective of whether or not 
 external tasks are available. If external tasks occurred directly after the last response, the client would have to send 
-an additional request to fetch and lock these tasks. This behavior is expensive in terms of resources.
+an additional request to fetch and lock these tasks. This behaviour is expensive in terms of resources.
 
-With the aid of long polling the server suspends the request for a configurable period of time. The response is 
+With the help of long polling the server suspends the request for a configurable period of time. The response is 
 performed within these time span as soon as new external tasks are available.
 
-Long polling significantly decreases the amount of requests and enables using resources more efficiently on both server 
+Long polling significantly decreases the amount of requests and enables using resources more efficiently on both, server- 
 and client-side.
 
 Please also see the [REST API documentation]({{< relref "reference/rest/external-task/fetch.md" >}}).
